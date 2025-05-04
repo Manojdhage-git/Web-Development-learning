@@ -24,3 +24,24 @@ app.listen(port, () => {
 })
 
 
+// app.get("/ig/:username",(req,res)=>{
+//     const followers=["adam","bob",'steve','abc'];
+//     let {username}=req.params;
+//     res.render("Instagram.ejs",{username,followers})
+// })
+
+
+
+//instagram activity
+
+
+app.get("/ig/:username",(req,res)=>{
+    let {username}=req.params;
+   const instadata=require("./data.json");
+  const data= instadata[username]
+    if(data){
+        res.render("Instagram.ejs",{data})
+    }else{
+        res.render("error.ejs")
+    }
+})
