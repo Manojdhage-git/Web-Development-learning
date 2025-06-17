@@ -60,4 +60,36 @@ User.find({}).then((res)=>{ //{age:{$gt:48}} // findOne... findById-{IDvALUE}
     console.log(err);
 });
 
+//UPDATE
+
+User.updateOne({name:"bruce"},{age:49}).then((res)=>{ // not need $set
+    console.log(res);
+
+})
+.catch((err)=>{
+    console.log(err);
+});
+
+//update and get valuees changed
+
+User.findOneAndUpdate({name:"bruce"},{age:55}).then((res)=>{ // not need $set
+    console.log(res);
+
+})
+.catch((err)=>{
+    console.log(err);
+});
+
+// firstly it finds then update 
+
+
+User.findOneAndUpdate({name:"bruce"},{age:55},{new:true}).then((res)=>{ 
+    console.log(res);
+
+})
+.catch((err)=>{
+    console.log(err);
+});
+
+//how it gives updated values after seting new:true...
 
