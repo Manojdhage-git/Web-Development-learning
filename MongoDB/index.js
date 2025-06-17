@@ -93,3 +93,19 @@ User.findOneAndUpdate({name:"bruce"},{age:55},{new:true}).then((res)=>{
 
 //how it gives updated values after seting new:true...
 
+//DELETE_________________
+
+User.deleteOne({name:"bruce"}).then(res=>{
+   console.log(res) ;
+})
+
+//deleteMany can also use..
+//findOneAndDelete()
+//findByIdAndDelete
+
+
+User.findByIdAndDelete(id).then(res=>{  //id is needed...
+   console.log(res) ;
+})
+
+
