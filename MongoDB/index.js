@@ -51,3 +51,13 @@ User.insertMany([
 ]).then((res)=>{
     console.log(res);''
 });
+
+//find
+
+User.find({}).then((res)=>{ //{age:{$gt:48}} // findOne... findById-{IDvALUE}
+    console.log(res); //[0]
+}).catch((err)=>{
+    console.log(err);
+});
+
+
