@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini WA</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h3>ALL Chats</h3>
+
+    <% for(let chat of chats){ %>
+        <div>
+            <p>From : <%= chat.from %>
+            </p>
+            <div class="class">
+                <p>From : <%= chat.msg %>
+                </p>
+            </div>
+
+            <p>From : <%= chat.to %>
+            </p>
+            <hr>
+        </div>
+        <%}%>
+
+</body>
+
+</html>
