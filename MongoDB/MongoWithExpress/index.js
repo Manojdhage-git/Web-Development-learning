@@ -3,6 +3,7 @@ const app=express();
 const mangoose=require("mongoose");
 const path =require("path");
 const chat=require(("./models/chat.js"))
+const methodOverride=require("method-override")
 
 app.use("views",path.join(__dirname,"views"));
 app.set("view engine","ejs");
@@ -65,6 +66,28 @@ app.post("/chats",(req,res)=>{
 
     res.render("/chats");
 })
+
+
+//Edit route
+app.get("/Chats/:id/edit",async (req,res)=>{
+    let {id}=req.params;
+    let chat= await Chat.findByID(id);
+    res.render("edit.ejs")
+
+})
+
+
+//Update route
+app.put("/Chats/:id",(req,res)=>{
+    let {id}=req.params;
+    let {msg:newMsg}=req.body;
+    let updatedChat=Chat.findByIdAndUpdate(
+        id,
+        {msg:newMsg},
+        {runValidators:true,new:true}
+    )
+})
+
 
 app.get("/",(req,res)=>{
     res.send("server is working");
