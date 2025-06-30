@@ -47,6 +47,15 @@ const addCustomer=async()=>{
 
 addCustomer();
 
+
+//populate------------------------------------------
+const findCustomer=async ()=>{
+    let result = await customer.find({}).populate("orders");
+    console.log(result);
+    console.log(result[0]);
+}
+
+findCustomer();
 // const addOrders=async()=>{
 //    let res = await order.insertMany([
 //   {item: "Samosa", price: 12},
