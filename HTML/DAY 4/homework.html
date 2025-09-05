@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+ <h1>Job Application: Senior Web Developer</h1>
+ <p>Thank you for your interest in joining our team. Please fill out the application below.</p>
+ <br>
+ <hr>
+ <form>
+ <h2>Personal Information</h2>
+ <label for="name">Full Name:</label>
+ <input type="text" id="name" name="name" placeholder="eg: Arjun Sharma" required> 
+    <br><br>
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" >
+    <br><br>
+    <label for="phone">Phone Number:</label>
+    <input type="tel" id="phone" name="phone" >
+    <br><br>
+    <label for="LinkedIn">LinkedIn Profile URL:</label>
+    <input type="url" id="LinkedIn" name="LinkedIn" placeholder="eg: https://www.linkedin.com/in/yourprofile">
+    <br><br>
+    <hr>
+    <h2>Professional Experience</h2>
+    <label for="resume">Upload Your Resume (PDF or DOCX):</label>  
+    <input type="file" id="resume" name="resume" accept=".pdf, .doc, .docx">
+    <br><br>
+    <label for="coverletter">Cover Letter:</label>
+    <br>
+    <textarea name="converletter" id="coverletter" rows="6" cols="15"></textarea>
+
+    <br><br>
+    <label for="ex">Years of Professional Experience</label>
+    <input type="number" id="ex" name="ex" min="0" max="50" >
+    <br><br>
+    <label for="startDate">Earliest Possible Start Date:</label>
+    <input type="date" id="startDate" name="startDate" >
+    <br><br>
+    <hr>
+    <h2>SKills And Availability</h2>
+    <p>Primary Skillset :</p>
+         <input type="radio" name="skills" id="fd" value="Frontend Development">
+         <label for="fd">Frontend Development</label>
+       
+        <br><br>
+       <input type="radio" name="skills" id="bd" value="Backend Development">
+        <label for="bd">Backend Development</label>
+        
+        <br><br>
+        
+        <input type="radio" name="skills" id="fsd" value="Full Stack Development">
+        <label for="fsd">Full Stack Development</label>
+        <br><br>
+
+        <p>Additional Skills</p>
+        <input type="checkbox" name="skill1" id="html" value="HTML">
+        <label for="html">HTML</label>
+        <br><br>
+        <input type="checkbox" name="skill2" id="css" value="CSS
+        ">
+        <label for="css">CSS</label>
+        <br><br>
+        <input type="checkbox" name="skill3" id="js" value="Java
+        ">
+        <label for="js">JavaScript</label>
+        <br><br>
+        <input type="checkbox" name="skill4" id="py" value="Python
+
+        ">
+        <label for="py">Python</label>  
+        <br><br>
+    <label for="worktype">Preferred Work Type:</label>
+    <br>
+        <select name="worktype" id="worktype">
+            <option value="fulltime">Full-Time</option>
+            <option value="parttime">Part-Time</option>
+            <option value="freelance">Freelance</option>
+            <option value="internship">Internship</option>
+        </select>
+        <br><br>
+        <hr>
+        <h2>Final Confirmation</h2>
+        <input type="checkbox" id="confirm">
+        <label for="confirm">I am legally authorized to work in this country.</label>
+        <br><br>
+        <label for="hear">How did you hear about us?</label>
+        <br>
+        <input type="text"  id="hear">
+        <br><br>
+        <button type="submit">Submit Application</button>
+        <button type="reset">Reset Form</button>
+</form> 
+</body>
+</html>
