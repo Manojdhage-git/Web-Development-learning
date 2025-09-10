@@ -24,14 +24,16 @@ span{
     border-radius: 10px;
     padding: 5px;
     margin: 10px;
-    display: block;
+    /* display: block; */
+    display: inline-block;
 }
 
 div{
     background-color: red;
     margin: 10px;
     padding: 10px;
-    display: inline;
+    /* display: inline; */
+    display: inline-block;
 }
 
 p{
