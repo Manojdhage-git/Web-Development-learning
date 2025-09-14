@@ -34,3 +34,8 @@ h1{
     left: 0;
     width: 100%;
 }
+
+/* z-index */
+h1{
+    z-index: 3;
+}
