@@ -18,9 +18,14 @@
         /* align-items: flex-end; */
         /* align-items: stretch; */
         /* align-items: baseline; */
+        
+        
         /* flex-wrap: wrap; */
         /* flex-wrap: wrap-reverse; */
         flex-wrap: nowrap;
+       
+       
+       
         /* align-content: center; */
         /* align-content: flex-start; */
         /* align-content: flex-end; */
