@@ -45,7 +45,8 @@
 
 .first{
     background-color: red;
-    flex-basis: 200px;
+    /* flex-basis: 200px; */
+    align-self: flex-end;
     /* flex-shrink: 4; */
     /* flex-grow:1  ; */
 }
