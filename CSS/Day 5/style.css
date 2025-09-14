@@ -53,7 +53,9 @@
 }
 .third{
     background-color: blue;
+    flex-grow: 3; 
 }
 .fourth{
     background-color: yellow;
+    flex-grow: 4;
 }
