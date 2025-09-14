@@ -45,6 +45,7 @@
 
 .first{
     background-color: red;
+    flex-grow:1  ;
 }
 .second{
     background-color: green;
